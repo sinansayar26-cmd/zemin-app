@@ -3,7 +3,7 @@ import os, glob, math, time, json
 import requests, pandas as pd, numpy as np
 from datetime import datetime, timedelta, timezone
 
-import dash
+import streamlit as st
 from dash import html, dcc, Input, Output, State
 import plotly.graph_objects as go
 
