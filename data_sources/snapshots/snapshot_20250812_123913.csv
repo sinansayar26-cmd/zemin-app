@@ -1,0 +1,2 @@
+fault,buffer_km,days,minmag,strength,risk,max_mag,count,b_value,dist_weighted,rateZ,gnss_slope,insar_slope,gw_z,window,updated_local
+Küçük Menderes (örnek),60,30,2,55,7.3,0.0,0,0.0,0.0,0.0,,,,Kısa vadede belirgin sinyal yok (pilot),2025-08-12 12:39:13
