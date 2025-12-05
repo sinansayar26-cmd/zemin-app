@@ -112,3 +112,6 @@ if st.button("Veri Çek ve Analiz Et"):
                 st.info("Seçilen kriterde deprem yok.")
 
         st.success("Analiz tamamlandı!")
+        
+if not PLOTLY_OK:
+    st.stop()
