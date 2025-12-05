@@ -1,15 +1,17 @@
-import os
-import glob
-import math
-import time
-import json
-import requests
-import pandas as pd
-import numpy as np
-from datetime import datetime, timedelta, timezone
-import streamlit as st
-import plotly.express as px
-import plotly.graph_objects as go
+# ESKİ (hata veriyor)
+# import plotly.express as px
+# import plotly.graph_objects as go
+
+# YENİ (hata olsa bile app çökmez)
+try:
+    import plotly.express as px
+    import plotly.graph_objects as go
+    PLOTLY_OK = True
+except ImportError:
+    st.error("Plotly yüklenemedi – requirements.txt kontrol ediliyor...")
+    PLOTLY_OK = False
+    px = None
+    go = None
 
 # -------------------------- Sayfa Ayarları --------------------------
 st.set_page_config(page_title="ZEMİN - Deprem Erken Uyarı", layout="wide")
