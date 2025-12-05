@@ -1,12 +1,16 @@
 # C:\Users\sinan\OneDrive\Masaüstü\deprem_risk_izleme\dashboard\fault_test_app.py
-import os, glob, math, time, json
-import requests, pandas as pd, numpy as np
+import os
+import glob
+import math
+import time
+import json
+import requests
+import pandas as pd
+import numpy as np
 from datetime import datetime, timedelta, timezone
-
 import streamlit as st
-from dash import html, dcc, Input, Output, State
+import plotly.express as px
 import plotly.graph_objects as go
-
 # ---- Opsiyonel Windows bildirimi ----
 try:
     from win10toast import ToastNotifier
